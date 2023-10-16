@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <header class="bg-primary d-flex align-items-center  justify-content-center py-3 text-white ">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-12 col-sm-3  ">
+      <h2 class="mx-3">Search For A City:</h2>
+      <input id="searchBar" class="form-control" type="text" placeholder="City:" aria-label="default input example">
+
+
+      <div class="d-grid gap-2 col-12 mx-auto my-2">
+        <button id="searchBtn" class="btn btn-primary" type="button">Search</button>
+      </div>
+      <hr>
+      <!-- List of City Buttons -->
+      <ul id="list-group">
+        <li class="list-group-item "><button type="button" class="btn btn-secondary w-100">Miami</button></li>
+        <li class="list-group-item"><button type="button" class="btn btn-secondary w-100">Austin</button></li>
+        <li class="list-group-item"><button type="button" class="btn btn-secondary w-100">Chicago</button></li>
+        <li class="list-group-item"><button type="button" class="btn btn-secondary w-100">Indianapolis</button>
+        </li>
+
+      </ul>
+    </div>
+    <!-- Current City Panel -->
+    <div class="col-12 col-sm-8 ">
+      <div class="row">
+        <div class="col-sm-10 ">
+          <h2 id="title">Atlanta</h2>
+          <p id="temp">Temp: 76.62F</p>
+          <p id="wind">Wind: 8.43 MPH</p>
+          <p id="humidity"> Humidity: 44%</p>
+        </div>
+
+        <!-- 5 Day Forecast-->
+      </div>
+      <h3>5 Day Forecast</h3>
+      <div id="fiveday-forecast" class="row">
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 id="card-title1">9/28/23</h5>
+              <img id="img1" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+              <p id="temp1">Temp: 76.62F</p>
+              <p id="wind1">Wind: 8.43 MPH</p>
+              <p id="humidity1"> Humidity: 44%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 id="card-title2">9/28/23</h5>
+              <img id="img2" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+              <p id="temp2">Temp: 76.62F</p>
+              <p id="wind2">Wind: 8.43 MPH</p>
+              <p id="humidity2"> Humidity: 44%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 id="card-title3">9/28/23</h5>
+              <img id="img3" src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+              <p id="temp3">Temp: 76.62F</p>
+              <p id="wind3">Wind: 8.43 MPH</p>
+              <p id="humidity3"> Humidity: 44%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 id="card-title4">9/28/23</h5>
+              <img id="img4"src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+              <p id="temp4">Temp: 76.62F</p>
+              <p id="wind4">Wind: 8.43 MPH</p>
+              <p id="humidity4"> Humidity: 44%</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card">
+            <div class="card-body">
+              <h5 id="card-title5">9/28/23</h5>
+              <img id="img5"src="https://openweathermap.org/img/wn/10d@2x.png" alt="">
+              <p id="temp5">Temp: 76.62F</p>
+              <p id="wind5">Wind: 8.43 MPH</p>
+              <p id="humidity5"> Humidity: 44%</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
